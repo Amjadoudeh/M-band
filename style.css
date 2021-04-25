@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+}
+/* the home Page */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+ /* overflow: hidden; */
+}
+
+
+.background_Home {
+  background-image: url("Home.jpg");
+  background-size: cover;
+}
+.background_AboutUs {
+  background-image:url('About Us.jpg') ;
+  background-size: cover;
+}
+.background_Listen {
+  background-image:url('Listen.jpg') ;
+  background-size: cover;
+}
+.background_Gallery {
+  background-image:url('Gallery.jpg') ;
+  background-size: cover;
+
+}
+
+header {
+  height: -webkit-fill-available;
+  margin: 0;
+  padding: 0;
+}
+main {
+height: 69.4vh;
+display: flex;
+
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin-left: 150px;
+} */
+/* the main nav  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li a {
+  background-color: rgb(89, 87, 86, 0.1);
+  text-align: center;
+  display: block;
+  color: rgb(223, 223, 232);
+  /* color: rgba(255, 255, 255, 0.679); */
+  font-size: 1.25rem;
+  padding: 0.3rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: aliceblue;
+}
+
+.list {
+  border-top: 1px solid aliceblue;
+  border-bottom: 1px solid aliceblue;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  /* align-items: center; */
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: row;
+  /* padding: initial; */
+}
+
+.media {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.container{
+  
+  width: 775px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#text {
+  font-family: "Roboto";
+  letter-spacing: 1.2px;
+  color: rgb(242, 255, 4);
+  font-weight: 15;
+  line-height: -9px;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.44);
+  color: aliceblue;
+  padding: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+/* footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 140px;
+}
+#first-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.main-div {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Roboto";
+  color: rgb(204, 201, 111);
+  font-weight: 200;
+}
+#ss {
+  text-decoration: underline;
+  color: rgb(162, 165, 12);
+}
+p {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+#input {
+  width: 100%;
+  border: 1px solid goldenrod;
+  padding: 6px 40px;
+  border-radius: 5px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.44);
+}
+
+#input:hover {
+  opacity: 0.6;
+}
+
+#submit {
+  background-color: rgb(204, 201, 111);
+  padding: 6px 40px;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 100%;
+  font-family: "Roboto";
+  color: black;
+  font-weight: 100;
+}
+#submit:hover {
+  opacity: 0.6;
+}
+#left-div {
+  display: flex;
+  margin-right: 611;
+}
+
+/* footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0 140px; */
+
+
+footer:hover {
+  opacity: 0.85;
+}
+#amjad {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+/* --------------------------------------- responsive it ---------------------------------------------------*/
+
+@media screen and (max-width:600px ){
+  body {
+    height: auto;
+    width: 100%;
+    /* background-image: url("mainSmall.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+  }
+  
+  /* footer {
+    display: block;
+  } */
+  .background_Home {
+    background-image: url("mainSmall.png");
+    background-size: cover;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin: 0;
+    padding: 0;
+  }
+  .list {
+    display: flex;
+    border: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .media {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: -16px ;
+    margin-left: -42px;
+}
+#left-div {
+  display: flex;
+  margin-right: 0;
+}
+.container{
+  margin: 25px;
+}
+#text {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Roboto";
+  color: rgba(221, 221, 221, 0.864);
+  font-weight: 15;
+  font-size: larger;
+
+}
+ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
