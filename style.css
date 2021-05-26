@@ -99,15 +99,57 @@ a:hover {
 #text {
   font-family: "Roboto";
   letter-spacing: 1.2px;
-  color: rgb(242, 255, 4);
+  color: rgb(212, 212, 198);
   font-weight: 15;
   line-height: -9px;
-
+  font-size: 1.2em;
+}
+.about-main{
+  height: 69.4vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.about-container {
+  display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 96%;
+    background-color: rgba(29, 28, 28, 0.623);
+}
+.imgBox{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.imgBox img{
+    margin-top: 15px;
+    width: 90%;
+    height: 90%;
+}
+.infoBox {
+  display: flex;
+  width: 95%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 footer {
   /* position: fixed; */
   bottom: 0;
+  height: 28%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -130,8 +172,23 @@ footer {
 } */
 
 .main-div {
+  justify-content: center;
+  padding: 0;
+  height: 90%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  flex-direction: row;
+  align-content: center;
+}
+#right-div{
+  padding: 0;
+  height: 90%;
+}
+#left-div {
+  padding: 0;
+  height: 90%;
+  display: flex;
+  margin-right: 611;
 }
 
 h3 {
@@ -173,10 +230,7 @@ p {
 #submit:hover {
   opacity: 0.6;
 }
-#left-div {
-  display: flex;
-  margin-right: 611;
-}
+
 
 /* footer ul {
   display: flex;
@@ -241,6 +295,7 @@ footer:hover {
     margin: 0;
   }
   .main-div {
+    height: 90%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -261,7 +316,7 @@ footer:hover {
   font-family: "Roboto";
   color: rgba(221, 221, 221, 0.864);
   font-weight: 15;
-  font-size: larger;
+  font-size: 74%;
 
 }
 ul {
