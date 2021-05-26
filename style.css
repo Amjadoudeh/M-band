@@ -133,8 +133,8 @@ a:hover {
 }
 .imgBox img{
     margin-top: 15px;
-    width: 90%;
-    height: 90%;
+    max-width: -webkit-fill-available;
+    max-height: -webkit-fill-available;
 }
 .infoBox {
   display: flex;
@@ -149,7 +149,6 @@ a:hover {
 footer {
   /* position: fixed; */
   bottom: 0;
-  height: 28%;
   width: 100%;
   display: flex;
   flex-direction: column;
